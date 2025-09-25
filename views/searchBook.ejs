@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Book</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <form action="/search" method="POST">
+    <a href="/" class="back-btn" title="Go Back">←</a>
+    <input type="text" name="keyword" placeholder="Enter Book_name or author or ISBN" required>
+    <button type="submit" class="submit">Search</button>
+  </form>
+
+  <ul>
+    <% books.forEach(book => { %>
+      <li>
+        <strong><%= book.title %></strong> by <%= book.author %> (ISBN: <%= book.isbn %>)
+        <a href="/delete/<%= book._id %>" style="margin-left: 10px; color: red;">Delete</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

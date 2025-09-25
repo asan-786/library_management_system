@@ -1,0 +1,33 @@
+<!DOCTYPE html>Add commentMore actions
+<html>
+<head>
+  <title>All Books</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="allbooks">
+    <h2>All Books</h2>
+    <a href="/" class="back-btn">←</a>
+    <table>
+      <thead>
+        <tr>
+          <th>Book_name</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% books.forEach(book => { %>
+          <tr>
+            <td><%= book.title %></td>
+            <td><%= book.author %></td>
+            <td><%= book.isbn %></td>
+            <td><a href="/book/<%= book._id %>">View</a></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #dad2d2;
+}
+
+/* Form container */
+form {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  animation: slideIn 0.4s ease;
+  
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Link */
+p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Back (cross) button */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  background-color: #eee;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #ccc;
+}
+.container{
+  position: fixed;
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgb(196, 175, 175);
+  padding: 40px;
+  border-radius:100px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.center-content {
+  text-align: center;
+  padding: 100px 100px;
+}
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+.btn, .back-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  margin: 10px 0;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+.submit{
+  width: 100px;
+  margin-left: 120px;
+}
+
+.allbooks{
+  max-width: 600px;
+  margin: 80px auto;
+  background: rgb(175, 146, 146);
+  padding: 90px;
+  border-radius:100px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.book_details{
+  display: flex;
+  gap: 25px;
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgb(175, 146, 146);
+  padding: 40px;
+  border-radius:100px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.btn-1{
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s;
+  margin-left: 130px;
+}
+.img-1{
+ position:fixed; 
+  height: 640px;
+  width:2700px;
+   z-index: -1;
+}
+.asan{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: rgb(255, 250, 250);
+}
